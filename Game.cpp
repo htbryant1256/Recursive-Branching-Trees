@@ -51,6 +51,8 @@ void Game::render()
     window->clear();
 
     line.recursiveTree(200, 90, 500, 800, window, x);
+    //line.serpinskiTriangle(500,500, 500, window);
+
     x++;
 
     window->display();
