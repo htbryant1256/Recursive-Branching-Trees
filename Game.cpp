@@ -50,7 +50,7 @@ void Game::render()
 {
     window->clear();
 
-    line.recursiveTree(250, 90, 500, 1000, window, x);
+    line.recursiveTree(200, 90, 500, 800, window, x);
     x++;
 
     window->display();

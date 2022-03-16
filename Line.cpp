@@ -4,19 +4,28 @@
 
 void Line::recursiveTree(float length, int angle, int xCord, int yCord, sf::RenderWindow* window, int angleMod)
 {
+    /*
     int color1 = rand() % 255 + 1;
     int color2 = rand() % 255 + 1;
     int color3 = rand() % 255 + 1;
-    if (length <= 5)
+    vectorLine.setFillColor(sf::Color(color1, color2, color3));
+    */
+
+    if (length <= 3)
     {
         return;
 
     }
     vectorLine.setPosition(xCord, yCord);
     vectorLine.setSize(sf::Vector2f(length, 1));
-    vectorLine.setFillColor(sf::Color(color1, color2, color3));
     vectorLine.setRotation(-angle);
-
+    if (length <= 20)
+    {
+        vectorLine.setFillColor(sf::Color::Green);
+    }
+    else {
+        vectorLine.setFillColor(sf::Color::White);
+    }
     window->draw(vectorLine);
 
     recursiveTree(length / 1.4, angle - angleMod, xCord + length * cos(angle * (3.14159265359 / 180)), yCord - length * sin(angle * (3.14159265359 / 180)), window, angleMod);
