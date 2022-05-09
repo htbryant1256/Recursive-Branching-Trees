@@ -15,6 +15,7 @@ Psudo game engine class
 class Game
 {
 private:
+
 	//objects
 	sf::RenderWindow* window;
 	sf::Event ev;
@@ -32,6 +33,8 @@ private:
 	void initWindow();
 
 public:
+	sf::View view;
+
 	int x = 0;
 	//constructors and destructors
 	Game();
@@ -43,6 +46,8 @@ public:
 	void pollEvents();
 	void update();
 	void render();
+	void renderOnce();
+
 };
 
 #endif

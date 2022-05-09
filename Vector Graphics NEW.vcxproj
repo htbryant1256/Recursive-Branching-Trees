@@ -24,6 +24,7 @@
     <ProjectGuid>{314458fc-2567-446d-a766-adafb77f7e56}</ProjectGuid>
     <RootNamespace>Vector_Graphics_NEW</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Recusrive Tree Generation</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

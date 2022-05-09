@@ -13,12 +13,16 @@ class Line
 public:
 	sf::RectangleShape vectorLine;
 	sf::CircleShape triangle;
+	sf::CircleShape circle;
+	float lengthModifer;
 
-	void recursiveTree(float length, int angle, int xCord, int yCord, sf::RenderWindow* window, int angleMod);
-	
+	void recursiveTree(float length, int angle, int xCord, int yCord, sf::RenderWindow* window, int angleMod, int branchNum);
+	void recursiveRandTree(float length, int angle, int xCord, int yCord, sf::RenderWindow* window);
+
 	void serpinskiTriangle(float radius, int xCord, int yCord, sf::RenderWindow* window);
-
-
+	void recursiveCircle(float radius, int xCord, int yCord, sf::RenderWindow* window);
+	Line();
+	
 };
 
 #endif
