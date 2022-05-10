@@ -104,9 +104,9 @@ void Game::render()
     window->clear();
    // srand((unsigned int)time(NULL));
 
-   // line.recursiveTree(400, 90, 500, 800, window, 30, 2);
-    line.recursiveRandTree(200, 90, 500, 1000, window);
-    Sleep(1000);
+    line.recursiveTree(400, 90, 500, 800, window, 30, 2);
+    //line.recursiveRandTree(200, 90, 500, 1000, window);
+  //  Sleep(1000);
     //line.recursiveRandTree(180, 90, 300, 800, window, 30, 3);
 
   //  line.recursiveRandTree(150, 90, 500, 600, window, 30, 3);
