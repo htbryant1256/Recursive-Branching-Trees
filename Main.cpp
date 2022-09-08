@@ -1,12 +1,7 @@
 /**
 Main.cpp
-Vector Graphics 
-
+Recursive Tree Generation
 Author: Henry Bryant
-
-CURRENT BUGS:
-
-COMPLETED BUGS: 
 
 */
 #include "Game.h"
@@ -16,13 +11,10 @@ COMPLETED BUGS:
 
 int main()
 {
-    //init game engine
     Game game;
     //game loop
-    //game.render();
-   // game.renderOnce();
 
-    while (game.running())
+    while (game.isRunning())
     {
         //update 
         game.update();

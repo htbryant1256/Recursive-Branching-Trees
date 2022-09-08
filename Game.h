@@ -1,53 +1,42 @@
-/*
-Game.h
-Game header file
-Psudo game engine class
-*/
 #ifndef GAME_H
 #define GAME_H
 #include "SFML/Graphics.hpp"
 #include "SFML/Window.hpp"
 #include "SFML/System.hpp"
 #include "SFML/Network.hpp"
-#include "Line.h"
+#include "BranchingStructure.h"
 #include <iostream>
 
 class Game
 {
 private:
-
-	//objects
+	//Objects
 	sf::RenderWindow* window;
 	sf::Event ev;
 	sf::VideoMode videoMode;
 
-	//objects from headers
-	Line line;
+	//Objects From Headers
+	BranchingStructure branchingStructure;
 
-	//private Variables
+	//Private Variables
 	int windowHeight;
 	int windowWidth;
 
-	//private functions
+	//Private Functions
 	void initVariables();
 	void initWindow();
 
 public:
 	sf::View view;
 
-	int x = 0;
-	//constructors and destructors
+	//Constructors
 	Game();
-	virtual	~Game();
 
-	//accessors
-	const bool running() const;
-	//functions
+	//Functions
 	void pollEvents();
 	void update();
 	void render();
-	void renderOnce();
-
+	bool isRunning();
 };
 
 #endif
