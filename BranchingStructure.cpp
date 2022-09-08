@@ -3,7 +3,6 @@
 #include <Windows.h>
 
 //Public Functions----------------------------------------------------------------------------------
-
 void BranchingStructure::drawTreeOneNode(float length, int angle, int xCord, int yCord, sf::RenderWindow* window, int angleMod)
 {
     if (length <= 7)
