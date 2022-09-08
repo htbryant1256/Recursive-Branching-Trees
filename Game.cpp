@@ -5,7 +5,7 @@
 //Private Functions---------------------------------------------------------------------------------
 void Game::initVariables()
 {
-	window = nullptr;
+    window = nullptr;
     windowWidth = 1000;
     windowHeight = 1000;
     videoMode.width = windowWidth;
