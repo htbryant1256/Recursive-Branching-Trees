@@ -44,8 +44,8 @@ void Game::pollEvents()
 void Game::update()
 {
     pollEvents();
+	
     //User Controls for Window Navigation-----------------------------------------------------------
-
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
     {
         view.move(sf::Vector2f(-10,0));
